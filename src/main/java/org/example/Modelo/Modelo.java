@@ -2,15 +2,15 @@ package org.example.Modelo;
 
 public class Modelo {
     private String nombreModelo;
-    private int anio;
+    private int año;
     private String descripcion;
 
     public Modelo() {
     }
 
-    public Modelo(String nombreModelo, int anio, String descripcion) {
+    public Modelo(String nombreModelo, int año, String descripcion) {
         this.nombreModelo = nombreModelo;
-        this.anio = anio;
+        this.año = año;
         this.descripcion = descripcion;
     }
 
@@ -23,11 +23,11 @@ public class Modelo {
     }
 
     public int getAnio() {
-        return anio;
+        return año;
     }
 
     public void setAnio(int anio) {
-        this.anio = anio;
+        this.año = anio;
     }
 
     public String getNombreModelo() {

@@ -1,0 +1,5 @@
+1,Julio Cortazar 306,Pozo del Molle,5913,0
+2,Boulevard Sarmiento 1510,Villa Maria,590,0
+3,Remedios de escaladas 1524,Villa Maria,5900,0
+4,Rivadavia 478,Laboulaye,6120,0
+5,Rivadia 478,Laboulaye,6120,0
