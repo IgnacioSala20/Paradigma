@@ -88,4 +88,18 @@ public class Vehiculo {
     public void setCliente(Cliente cliente) {
         this.cliente = cliente;
     }
+
+    @Override
+    public String toString() {
+        return "Vehiculo{" +
+                "tipoPatente='" + tipoPatente + '\'' +
+                ", patente='" + patente + '\'' +
+                ", marca=" + marca +
+                ", añoFabricacion=" + añoFabricacion +
+                ", kilometro=" + kilometro +
+                ", nroChasis=" + nroChasis +
+                ", tipoVehiculo=" + tipoVehiculo +
+                ", cliente=" + cliente +
+                '}';
+    }
 }

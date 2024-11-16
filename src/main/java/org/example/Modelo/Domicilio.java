@@ -1,7 +1,7 @@
 package org.example.Modelo;
 
 public class Domicilio {
-    private int numeroCliente;
+    private int punteroDomicilio;
     private String calle;
     private String ciudad;
     private int codPostal;
@@ -10,20 +10,20 @@ public class Domicilio {
     public Domicilio() {
     }
 
-    public Domicilio(int numeroCliente, String calle, String ciudad, int codPostal, int numDepartamento) {
-        this.numeroCliente = numeroCliente;
+    public Domicilio(int punteroDomicilio, String calle, String ciudad, int codPostal, int numDepartamento) {
+        this.punteroDomicilio = punteroDomicilio;
         this.calle = calle;
         this.ciudad = ciudad;
         this.codPostal = codPostal;
         this.numDepartamento = numDepartamento;
     }
 
-    public int getNumeroCliente() {
-        return numeroCliente;
+    public int getpunteroDomicilio() {
+        return punteroDomicilio;
     }
 
-    public void setNumeroCliente(int numeroCliente) {
-        this.numeroCliente = numeroCliente;
+    public void setpunteroDomicilio(int punteroDomicilio) {
+        this.punteroDomicilio = punteroDomicilio;
     }
 
     public String getCalle() {
@@ -61,7 +61,7 @@ public class Domicilio {
     @Override
     public String toString() {
         return "Domicilio{" +
-                "numeroCliente='" + numeroCliente + '\'' +
+                "punteroDomicilio='" +punteroDomicilio + '\'' +
                 ", calle='" + calle + '\'' +
                 ", ciudad='" + ciudad + '\'' +
                 ", codPostal=" + codPostal +

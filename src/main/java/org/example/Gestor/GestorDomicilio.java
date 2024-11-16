@@ -10,21 +10,21 @@ public class GestorDomicilio {
 
     Scanner scanner = new Scanner(System.in);
 
-    public Domicilio consultarDomicilio(int numeroClienteBuscar){
+    public Domicilio consultarDomicilio(int punteroDomicilioBuscar){
         try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\Usuario\\IdeaProjects\\Paradigma\\src\\main\\java\\org\\example\\BaseDatos\\Domicilio.txt"))) {
             String linea;
             while ((linea = br.readLine()) != null) {//mientras haya una linea mas en el archivo
                 String[] datos = linea.split(","); //tomo los datos
 
                 if (datos.length == 5) {
-                    int numeroCliente = Integer.parseInt(datos[0].trim());
+                    int punteroDomicilio = Integer.parseInt(datos[0].trim());
                     String direccion = datos[1].trim();
                     String ciudad = datos[2].trim();
                     int codigoPostal = Integer.parseInt(datos[3].trim());
                     int numeroDepartamento = Integer.parseInt(datos[4].trim());
 
-                    if(numeroClienteBuscar == numeroCliente){
-                        org.example.Modelo.Domicilio domicilio = new Domicilio(numeroCliente,direccion,ciudad,codigoPostal,numeroDepartamento);
+                    if(punteroDomicilioBuscar == punteroDomicilio){
+                        org.example.Modelo.Domicilio domicilio = new Domicilio(punteroDomicilio,direccion,ciudad,codigoPostal,numeroDepartamento);
                         return domicilio;
                     }
                 }

@@ -37,4 +37,13 @@ public class Modelo {
     public void setNombreModelo(String nombreModelo) {
         this.nombreModelo = nombreModelo;
     }
+
+    @Override
+    public String toString() {
+        return "Modelo{" +
+                "nombreModelo='" + nombreModelo + '\'' +
+                ", año=" + año +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
+    }
 }

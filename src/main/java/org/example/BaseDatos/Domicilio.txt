@@ -1,5 +1,9 @@
 1,Julio Cortazar 306,Pozo del Molle,5913,0
-2,Boulevard Sarmiento 1510,Villa Maria,590,0
+2,Boulevard Sarmiento 1574,Villa Maria,5900,14
 3,Remedios de escaladas 1524,Villa Maria,5900,0
 4,Rivadavia 478,Laboulaye,6120,0
 5,Rivadia 478,Laboulaye,6120,0
+6,Entre Rios 357,Villa Maria,5900,0
+1,Boulevard España 461,Villa Maria,5900,0
+1,Bpulevard España 461,Villa Maria,5900,0
+7,Boulevard España 461,Villa Maria,5900,0

@@ -4,18 +4,16 @@ import java.util.ArrayList;
 
 public class Marca {
     private String nombre;
-    private int numMarca;
-    private ArrayList<Modelo> modelos=new ArrayList<>();
+    private Modelo modelo;
     private String descripcion;
 
-    public Marca(String nombre, int numMarca, ArrayList<Modelo> modelos, String descripcion) {
-        this.nombre = nombre;
-        this.numMarca = numMarca;
-        this.modelos = modelos;
-        this.descripcion = descripcion;
+    public Marca() {
     }
 
-    public Marca() {
+    public Marca(String nombre, Modelo modelo, String descripcion) {
+        this.nombre = nombre;
+        this.modelo = modelo;
+        this.descripcion = descripcion;
     }
 
     public String getNombre() {
@@ -26,20 +24,12 @@ public class Marca {
         this.nombre = nombre;
     }
 
-    public int getNumMarca() {
-        return numMarca;
+    public Modelo getModelo() {
+        return modelo;
     }
 
-    public void setNumMarca(int numMarca) {
-        this.numMarca = numMarca;
-    }
-
-    public ArrayList<Modelo> getModelos() {
-        return modelos;
-    }
-
-    public void setModelos(ArrayList<Modelo> modelos) {
-        this.modelos = modelos;
+    public void setModelo(Modelo modelo) {
+        this.modelo = modelo;
     }
 
     public String getDescripcion() {
@@ -48,5 +38,14 @@ public class Marca {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    @Override
+    public String toString() {
+        return "Marca{" +
+                "nombre='" + nombre + '\'' +
+                ", modelo=" + modelo +
+                ", descripcion='" + descripcion + '\'' +
+                '}';
     }
 }

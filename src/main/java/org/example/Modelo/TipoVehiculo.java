@@ -37,4 +37,13 @@ public class TipoVehiculo {
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
     }
+
+    @Override
+    public String toString() {
+        return "TipoVehiculo{" +
+                "peso=" + peso +
+                ", descripcion='" + descripcion + '\'' +
+                ", precioUnitario=" + precioUnitario +
+                '}';
+    }
 }
